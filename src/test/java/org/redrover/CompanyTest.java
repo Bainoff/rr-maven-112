@@ -22,6 +22,7 @@ public class CompanyTest {
     @Test
     public void getNameTest() {
         Assert.assertEquals(Company.getEmployeeName("bazavr", arr), "worker number 5");
+        Assert.assertEquals(Company.getEmployeeName("noname", arr), "There is no worker with this name");
     }
 
     @Test
